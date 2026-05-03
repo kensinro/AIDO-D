@@ -1,0 +1,7 @@
+item,value
+top_D_pathway,HALLMARK_HEME_METABOLISM
+top_D_value,6.6569153423463
+top_D_p,2.20335592456268e-07
+high_variance_low_D_pathway,HALLMARK_INTERFERON_ALPHA_RESPONSE
+best_secondary_pathway,HALLMARK_UV_RESPONSE_DN
+best_delta_D,0.04160984255720379

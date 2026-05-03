@@ -1,0 +1,22 @@
+project_name: AIDO-D-BRCA
+
+inputs:
+  expression_matrix: "D:/AIDO-Data/UCSC_XENA/BRCA/GE.tsv"
+  survival_table: "D:/AIDO-Data/UCSC_XENA/BRCA/survival.tsv"
+  hallmark_gmt: "D:/AIDO-Data/MSigDB/h.all.v2023.2.Hs.symbols.gmt"
+
+columns:
+  sample_id: "sample"
+  survival_time: "OS.time"
+  survival_event: "OS.event"
+
+settings:
+  expression_orientation: "genes_by_samples"   # genes_by_samples or samples_by_genes
+  sample_type_filter: "01"                     # set null if not needed
+  stratification: "median"                     # median only in this package
+  random_trials: 1000
+  random_seed: 42
+  min_genes_per_pathway: 5
+
+outputs:
+  output_dir: "D:/AIDO-Temp/AIDO-D-BRCA"
